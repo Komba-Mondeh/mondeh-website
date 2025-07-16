@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONDEH'S WEBSITE</title>
+    <link rel="icon"type="image/x-icon" href="mondeh.jpg">
+    <style>
+      *{
+        margin: 0;                                                                            
+        padding: 0;
+ 
+      }
+      .main{
+        width: 100%;
+        height: 109vh;
+      }
+      .navbar{
+        width: 1200px;
+        height: 75px;
+        margin:auto;
+      }
+      .icon{
+        width: 2oopx;
+        float: left;
+        height: 70px;
+      }
+      .logo{
+        color: #ff7200;
+        font-size: 35px;
+        font-family: Arial;
+        padding-left: 20px;
+        float: left;
+        padding-top: 10px;
+        font-weight: bold;
+      }
+      
+      ul a:hover{
+        color: #ff7200;
+
+      }
+      
+      body {
+        font-family: Arial;
+        margin: 0;
+        background-color: #f2f2f2;
+        font-size: 16;
+
+
+      }
+      header {
+        background-color: #007b83;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      nav {
+        background-color: #004d4d;
+        overflow: hidden;
+      }
+      nav a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+      }
+      nav a:hover {
+        background-color: #009999;
+      }
+      section {
+        padding: 20px;
+      }
+      footer {
+        background-color: #007b83;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+      }
+      .div.image{
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 180px;
+      }
+
+      .div.image:hover{
+        border: 1px solid #777;
+      }
+      .div.image img{
+        width: 100%;
+        height: auto;
+      }
+
+      div.desc{
+        padding: 15px;
+        text-align:  center;
+        display: flex;
+        justify-content: center;
+      }
+      img{
+        border-radius: 150%;
+        margin: auto;
+        width: 50%;
+        height: 600px;
+        align-items: center;
+        border: px solid black;
+    
+      }
+      img{
+        filter:saturate(200%);
+        clip-path: polygon(50% 0%, 100% 50%,50% 100%, 0% 50%);
+        float: none;
+        position: relative;
+        
+      }
+      body{
+        background-color:#ccc;
+        
+        
+      
+      }
+      .search{
+        width: 330px;
+        float: none;
+        margin-left: 270px;
+        font-weight: bold;
+      }
+      .search{
+        font-family: Times New Roman;
+        width: 200px;
+        height: 40px;
+        background: transparent;
+        border: 1px solid #131211;
+        margin-top:13px;
+        color: #fff;
+        border-right: none;
+        font-size: 16px;
+        padding: 10px;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        font-weight: bold;
+
+      }
+      .btn{
+        width: 100%;
+        height: 40px;
+        background: #ff7200;
+        margin-top: 13px;
+        color: #fff;
+        font-size: 16px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+
+      }
+      .btn:focus{
+        outline: none;
+
+      }
+      .srch:focus{
+        outline: none;
+      }
+      .content{
+        width: 1200px;
+        height: auto;
+        margin: auto;
+        color: #181515;
+        position: relative;
+
+      }
+      .content.par{
+        padding-left: 20px;
+        padding-bottom: 25px;
+        font-family: Arial;
+        letter-spacing: 1.2px;
+        line-height: 30px;
+      }
+      .content h1{
+        font-family:'Times New Roman';
+        font-size: 50PX;
+        padding-left:20px;
+        margin-top: 9%;
+        letter-spacing: 2px;
+
+      }
+
+      
+      .content.cn{
+        width: 160px;
+        height: 40px;
+        background: #ff7200;
+        border: none;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        font-size: 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition:45 ease 
+        ;
+      }
+      .cn:hover{
+        background-color: #fff;
+
+      }
+      .menu{
+        font-size: 22;
+        font-family: Arial;
+        font-weight: bold;
+      }
+      .form{
+        width: 250px;
+        height: 380px;
+        background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
+        position: absolute;
+        top: 200px;
+        left: 870px;
+        border-radius: 10px;
+      }
+      .form h2{
+        width: 220px;
+        font-family:sans-serif ;
+        text-align: center;
+        color: #ff7200;
+        border-radius: 10px;
+        margin:2px;
+        padding: 8px;
+
+      }
+      .form input{
+        width: 240px;
+        background: transparent;
+        border-bottom: 1px solid #ff7200;
+        border-top: none;
+        border-left: none;
+        color: #fff;
+        font-size: 16x;
+        letter-spacing: 1px;
+        margin-top: 30px;
+        font-family: sans-serif;
+
+      }
+      .form input:focus{
+        outline: none;
+
+      }
+      ::placeholder{
+        color: #fff;
+        font-family: Arial;
+
+      }
+      .btnn{
+        width: 240px;
+        height: 40px;
+        background: #ff7200;
+        border: none;
+        margin-top: 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        color: #fff;
+      }
+      .btnn:hover{
+        background: #fff;
+        color: #ff7200;
+        
+      }
+      .btnn a{
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+
+      }
+      .form.link{
+        font-family: Arial,Arial, Helvetica, sans-serif;
+        font-size: 17px;
+        padding-top: 20px;
+        text-align: center;
+
+
+      }
+      .form.link a{
+        text-decoration: wavy;
+        color: #ff7200;
+
+
+      }
+      .liw{
+        padding-top: 15px;
+        padding-bottom: 10px;
+        text-align: center;
+      }
+      .icons a{
+        text-decoration: wavy;
+        color: #fff;
+
+      }
+      .icons ion-icon{
+        color: #fff;
+        font-size: 30px;
+        padding-left: 14px;
+        padding-top: 5px;
+      }
+      .icon ion-icon:hover{
+        color: #ff7200;
+        
+      }
+
+    </style>
+  </head>
+  <body>
+
+
+    
+    <div class="main">
+      <div class="=navbar">
+        <div class="icon">
+          <h2 class="logo">MONDEH</h2>
+        </div>
+      </div>
+    </div>
+    <header>
+      <marquee>M AND B MEDICAL LABORATORY</marquee>
+      <marquee direction="right">M AND B LABORATORY</marquee>
+      <h1>M AND B Medical Laboratory</h1>
+      <p>Trusted and Accurate Medical Testing Services</p>
+    </header>
+      <svg width="300" height="200">
+      <polygon points="100,10,40,198 190,78 10,78 160,198" style="fill: lime;stroke: purple;stroke-width: 5;fill-rule: evenodd;"/>
+    </svg>
+
+
+    <div class="menu">
+      <ul>
+      <a href="#home">HOME &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</a>
+      <a href="#about">ABOUT US &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</a>
+      <a href="#services">SERVICES &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</a>
+      <a href="#contact">CONTACT US</a>
+      </ul>
+    
+    <div class="search">
+      <input class="srch" type="search" name="" placeholder="Type To text" />
+      <a href="#"><button class="btn">search</button></a>
+    </div>
+    <div class="content">
+      <h1>
+        MEDICAL LABORATORY<br /><span>SALLBO ENTERPRISE</span><br />@ PIMBILANE
+      </h1>
+      <p class="par"></p>OWN BY DR KATINGOR AND KOMBA MONDEH</P>
+      <button class="cn"><a href="mondehkomba321@gmail.com">JOIN US</a></button>
+    </div>
+    <div class="form">
+      <h2>Login Here</h2>
+      <input type="email"placeholder="Enter Email Here">
+      <input type="password"name=""placeholder="Enter Password Here"><button class="btn"><a href="#">Login</a></button>
+      <p class="link">Don't have an account</p><br>
+      <a href="#">Sign Up Here</a></p>
+      <p class="liw">Login with</p>
+      <div class="icon">
+        <a href="#"><ion-icon name="logo-instagram.jpg"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-twiter"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+      </div>
+      <script src="https://unpkg.com/ion-icons@5.4.0/dist/ion-icons.js"></script>
+        </div>
+
+    <div class="image">
+      <a target="_blank" href="M AND B.jpg">
+        <img src="M AND B.jpg" width="1000" height="700">
+        <div class="desc">M AND B SALLBO ENTERPRISE OR LABORATORY, WE OFFER ALL KINDS OF TEST<br>We have well equiped tools <br>It also contains additional like: <br>Pharmacy, Clinic for treatment of patients<br>We also have professionals and trained nurses and technicians that are always ready to serve<br>Custormers and Patients are always</div>
+      </a>  
+      </div>
+    </div>
+    <div class="image">
+      <a target="_blank" href="mondeh.jpg">
+        <img src="mondeh.jpg"width="1000" height="700">
+        <a href="mondeh.jpg"download>Download</a>
+      </a>
+      <div class="desc"> This is Komba Mondeh<br>Junior Lab Technician @ M AND B SALLBO LABORATORY</div>
+    </div>
+    <div class="image">
+      <a target="_blank"href="Katingor.jpg">
+        <img src="Katingor.jpg"width="1000" height="800">
+        <a href="Katingor.jpg"download>Download</a>
+      </a>
+      <div class="desc"> MR MANI KATINGOR <br>THE SENIOR LAB TECHNICIAN OF M and B Medical Laboraory<br>He is well equipped in his field <br>He is a trained and qualified technologist and he is always ready to serve, share his knowledge and manifest in his field.</div>
+    </div>
+
+
+    <section id="home">
+     <marquee><h2>Welcome to M AND B Medical Laboratory</h2></marquee>
+      <p>
+        We offer reliable diagnostic services to support your health and
+        well-being. Our laboratory is equipped with essential tools and operated
+        by trained professionals dedicated to accurate and timely results.
+      </p>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+       M AND B Medical Laboratory is a community-centered facility committed to
+        providing affordable and trustworthy medical testing services. Located
+        in a safe and accessible environment, we serve with integrity, accuracy,
+        and care.
+      </p>
+      <video width="320"height="240" autoplay>
+        <source src="video.mp4"type="video/mp4">
+        <source src="movie.ogg"type="video/ogg  ">
+        Your browser does not support the video tag.
+      </video>
+
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Blood Testing</li>
+        <li>Urine and Stool Analysis</li>
+        <li>Malaria Testing</li>
+        <li>HIV Testing & Counseling</li>
+        <li>Pregnancy Tests</li>
+        <li>Microscopy & Culture</li>
+      </ul>
+    </section> 
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>📞 Phone: 031856461</p>
+      <p>
+        📧 Email:
+        <a href="mailto:mondehkomba321@gmail.com">mondehkomba321@gmail.com</a>
+      </p>
+    </section>
+     <form action="http:www.mondeh's website.com" method="post">
+      <input type="file" name="file upload" accept="image/*"/>
+     </form>
+
+    <footer>
+      <marquee direction="down" height=40%> DONE BY KOMBA MONDEH</marquee>
+      <p>&copy; 2025  M and B Medical Laboratory. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
+
+
+
